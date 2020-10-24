@@ -1,5 +1,6 @@
 {
   "prettier.disableLanguages": ["html"],
   "prettier.singleQuote": true,
-  "prettier.requireConfig": false
+  "prettier.requireConfig": false,
+  "prettier.arrowParens": "always"
 }
