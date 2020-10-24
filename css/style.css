@@ -135,8 +135,7 @@ img {
   }
 }
 
-/* Responsive Carousel Adjustments
------------------------------------------- */
+/* Mobile Devices */
 @media screen and (max-width: 600px) {
   .carousel {
     height: 500px;
