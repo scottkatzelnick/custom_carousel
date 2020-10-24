@@ -6,7 +6,7 @@ var slidesToShift = 4;
 // Left arrow onClick event
 arrow[0].onclick = () => {
   for (let element of listings) {
-    // Shift 4 slides right
+    // Shift right 4 slides
     element.style.left = '0px';
   }
 };
@@ -14,7 +14,8 @@ arrow[0].onclick = () => {
 // Right arrow onClick event
 arrow[1].onclick = () => {
   for (let element of listings) {
-    // Shift 4 slides left (Responsive shift amount)
+    // Shift left 4 slides
+    // Responsive shift amount = listing widths * number of slides to shift + margin around elements
     element.style.left = `-${element.offsetWidth * slidesToShift + 40}px`;
   }
 };
