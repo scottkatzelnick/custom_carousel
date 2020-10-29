@@ -1,4 +1,4 @@
-// Create two arrays: Arrow Buttons / All Slides
+// Separate both arrows and groups of product listings into variables
 var left = document.querySelector('.left');
 var right = document.querySelector('.right');
 var firstGroup = document.querySelector('.product-listings-group-1');
@@ -7,6 +7,7 @@ var secondGroup = document.querySelector('.product-listings-group-2');
 // Left arrow onClick event
 left.onclick = () => {
   if (firstGroup.style.left === 0) {
+    // do nothing
     return;
   } else {
     secondGroup.style.left = `0px`;
@@ -17,9 +18,10 @@ left.onclick = () => {
 };
 
 // Right arrow onClick event
-// Responsive shift amount = 4 listing element width
 right.onclick = () => {
+  // Shift amount = 4 listing element width (firstGroup/secondGroup.offsetWidth)
   if (secondGroup.style.left === `-${secondGroup.offsetWidth}px`) {
+    // do nothing
     return;
   } else {
     firstGroup.style.left = `-${firstGroup.offsetWidth}px`;
