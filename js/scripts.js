@@ -1,21 +1,30 @@
 // Create two arrays: Arrow Buttons / All Slides
-var arrow = document.querySelectorAll('button');
-var listings = document.querySelectorAll('.slide');
-var slidesToShift = 4;
+var left = document.querySelector('.left');
+var right = document.querySelector('.right');
+var firstGroup = document.querySelector('.product-listings-group-1');
+var secondGroup = document.querySelector('.product-listings-group-2');
 
 // Left arrow onClick event
-arrow[0].onclick = () => {
-  for (let element of listings) {
-    // Shift right 4 slides
-    element.style.left = '0px';
+left.onclick = () => {
+  if (firstGroup.style.left === 0) {
+    return;
+  } else {
+    secondGroup.style.left = `0px`;
+    secondGroup.style.height = `100%`;
+    firstGroup.style.left = `0px`;
+    firstGroup.style.height = `100%`;
   }
 };
 
 // Right arrow onClick event
-arrow[1].onclick = () => {
-  for (let element of listings) {
-    // Shift left 4 slides
-    // Responsive shift amount = listing widths * number of slides to shift + margin around elements
-    element.style.left = `-${element.offsetWidth * slidesToShift + 40}px`;
+// Responsive shift amount = 4 listing element width
+right.onclick = () => {
+  if (secondGroup.style.left === `-${secondGroup.offsetWidth}px`) {
+    return;
+  } else {
+    firstGroup.style.left = `-${firstGroup.offsetWidth}px`;
+    firstGroup.style.height = `100%`;
+    secondGroup.style.left = `-${firstGroup.offsetWidth}px`;
+    secondGroup.style.height = `100%`;
   }
 };

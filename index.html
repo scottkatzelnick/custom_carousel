@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Custom vanilla JavaScript image carousel">
-    <meta name="keywords" content="Javascript, HTML, CSS, carousel">
-    <meta name="author" content="Scott Katzelnick">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Custom vanilla JavaScript image carousel"
+    />
+    <meta name="keywords" content="Javascript, HTML, CSS, carousel" />
+    <meta name="author" content="Scott Katzelnick" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Vanilla JavaScript Carousel</title>
   </head>
   <body>
-
     <!-- Main Carousel -->
     <main class="carousel">
-      <section class="slide-container">
-
-        <!-- Left/Right Arrows -->
-        <button class="left">
-          <img src="./img/arrow_left.svg" alt="Left arrow">
-        </button>
-        <button class="right">
-          <img src="./img/arrow_right.svg" alt="Right arrow">
-        </button>
+      <section class="button-container">
+        <!-- Left Arrow -->
+        <div class="buttons">
+          <button class="left">
+            <img src="./img/arrow_left.svg" alt="Left arrow" />
+          </button>
+        </div>
 
         <!-- Product Listings -->
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
-        </div>
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
-        </div>
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
-        </div>
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
-        </div>
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
-        </div>
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
-        </div>
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
-        </div>
-        <div class="slide">
-          <img src="./img/product_listing.jpg" alt="">
-          <p class="desc">Floral Dress</p>
-          <p class="price">$200</p>
+        <section class="slide-container">
+          <div class="product-listings-group-1">
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 1</p>
+              <p class="price">$200</p>
+            </div>
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 2</p>
+              <p class="price">$200</p>
+            </div>
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 3</p>
+              <p class="price">$200</p>
+            </div>
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 4</p>
+              <p class="price">$200</p>
+            </div>
+          </div>
+          <div class="product-listings-group-2">
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 5</p>
+              <p class="price">$200</p>
+            </div>
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 6</p>
+              <p class="price">$200</p>
+            </div>
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 7</p>
+              <p class="price">$200</p>
+            </div>
+            <div class="slide">
+              <img src="./img/product_listing.jpg" alt="" />
+              <p class="desc">Floral Dress 8</p>
+              <p class="price">$200</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right Arrow -->
+        <div class="buttons">
+          <button class="right">
+            <img src="./img/arrow_right.svg" alt="Right arrow" />
+          </button>
         </div>
       </section>
     </main>
 
     <!-- JS Link -->
-    <script type="text/javascript" defer="defer" src="./js/scripts.js"></script>
-
+    <script
+      type="text/javascript"
+      defer="defer"
+      src="./js/scripts.js"
+    ></script>
   </body>
 </html>
