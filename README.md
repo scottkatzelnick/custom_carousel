@@ -8,7 +8,7 @@ This custom carousel was built with vanilla HTML, CSS and JavaScript. There are 
 
 ## Responsiveness
 
-Even though responsiveness was not a necessary requirement for this carousel project, a little bit was added. For phone screens, the arrows are removed to encourage a streamlined multi-touch gesture swipe and for larger screens, say above 1440px, the carousel container was resized so it scaled slightly better. More could be done here, but the basics have been implemented, plus the requirements.
+Even though responsiveness was not a necessary requirement for this carousel project, a good amount was added. For phone screens, the arrows are removed to encourage a streamlined multi-touch gesture swipe and for larger screens, say above 1440px, the carousel container automatically resizes so it scales correctly. A little more could be done here, but the basics have been implemented, plus the requirements.
 
 **Thank you for the opportunity,**
 
